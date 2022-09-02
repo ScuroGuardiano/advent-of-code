@@ -43,9 +43,6 @@ function partTwo(data) {
             countCO2[line.charAt(i)]++;
         });
 
-        console.log(countOxygen);
-        console.log(countCO2);
-
         if (oxygen.length > 1) {
             let filtered = oxygen.filter(line => line.charAt(i) === (countOxygen['0'] > countOxygen['1'] ? '0' : '1'));
             if (filtered.length == 0) {
